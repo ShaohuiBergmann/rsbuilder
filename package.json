@@ -1,0 +1,15 @@
+{
+  "name": "rsbuilder",
+  "version": "1.0.0",
+  "description": "\"Pipeline UI\"",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "start": "electron ."
+  },
+  "author": "\"SHW\"",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^22.1.0"
+  }
+}
