@@ -3,6 +3,11 @@ const createWindow = () => {
 	const win = new BrowserWindow({
 		width: 800,
 		height: 600,
+		webPreferences: {
+			nodeIntegration: false,
+			worldSafeExecuteJavaScript: true,
+			contextIsolation: true,
+		},
 	});
 
 	win.loadFile("index.html");
