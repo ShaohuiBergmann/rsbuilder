@@ -8,7 +8,7 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.js$/,
+				test: /\.(js|jsx|ts|tsx)$/,
 				exclude: /node_modules/,
 				use: {
 					loader: "babel-loader",
@@ -23,10 +23,12 @@ module.exports = {
 								},
 							],
 							"@babel/preset-react",
+							"@babel/preset-typescript",
 						],
 					},
 				},
 			},
+
 			{
 				test: [/\.s[ac]ss$/i, /\.css$/i],
 				use: [
@@ -41,7 +43,7 @@ module.exports = {
 		],
 	},
 	resolve: {
-		extensions: [".js, '.ts', '.jsx', '.tsx', '.css'"],
+		extensions: ["", ".tsx", ".ts", ".js", ".jsx", ".css"],
 	},
 	output: {
 		filename: "app.js",

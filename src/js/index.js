@@ -1,7 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
+import App from "./App.tsx";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function render() {
-	ReactDOM.render(<h2>Hello from React!</h2>, document.getElementById("root"));
-}
-render();
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App tab="home" />);
