@@ -17,6 +17,10 @@ const createWindow = () => {
 app.whenReady().then(() => {
 	createWindow();
 });
+
+try {
+	require("electron-reloader")(module);
+} catch (_) {}
 app.on("window-all-closed", () => {
 	if (process.platform !== "darwin") app.quit();
 });
