@@ -1,16 +1,18 @@
  * {
-	box-sizing: border-box;
-}
-html {
-	width: 100vw;
-	height: 100vh;
+	box-sizing: border-box ;
 }
 
 #root {
 	width: 100vw;
-	height: 100vw;
+	height: 100vh;
 }
 
 .border-dashed {
 	border-style: dashed !important;
+	border-color: rgb(148, 147, 147);
+	width: 300px;
+	height: 200px
+}
+body {
+	-webkit-app-region: drag;
 }

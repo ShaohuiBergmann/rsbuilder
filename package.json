@@ -2,7 +2,7 @@
   "name": "rsbuilder",
   "version": "1.0.0",
   "description": "\"Pipeline UI\"",
-  "main": "main.js",
+  "main": "electron/main.js",
   "scripts": {
     "test": "test",
     "watch": "webpack --config webpack.common.js --watch",
