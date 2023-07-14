@@ -60,6 +60,7 @@ const Dragdrop = () => {
 				Drag 'n' drop some files here,
 				<button className="btn btn-secondary" type="button" onClick={open}>
 					or click here to open File Dialog
+					see some changes
 				</button>
 			</p>
 
